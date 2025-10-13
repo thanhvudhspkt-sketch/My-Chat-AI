@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Cài Ğ?t Chat Widget</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f7f7f7;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Web CÃ i Äáº·t Chat Widget</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f7f7f7;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Chào m?ng ğ?n v?i Trang Web c?a tôi!</h1>
-    <p>?ng d?ng chat ğ? ğı?c cài ğ?t và s?n sàng ğ? s? d?ng.</p>
-</div>
+  <div class="container">
+    <h1>ChÃ o má»«ng Ä‘áº¿n vá»›i Trang Web cá»§a tÃ´i!</h1>
+    <p>á»¨ng dá»¥ng chat Ä‘Ã£ Ä‘Æ°á»£c cÃ i Ä‘áº·t vÃ  sáºµn sÃ ng Ä‘á»ƒ sá»­ dá»¥ng.</p>
+  </div>
 
-<!-- M? cài ğ?t Chat Widget Coze -->
-<script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
-<script>
-  new CozeWebSDK.WebChatClient({
-    config: {
-      bot_id: '7559917671878721544',  <!-- Thay bot_id n?u b?n có bot riêng -->
-    },
-    componentProps: {
-      title: 'Coze',  <!-- Tiêu ğ? c?a chat widget -->
-      welcomeMessage: 'Chào b?n! C?n tr? giúp g? hôm nay?',  <!-- L?i chào m?c ğ?nh -->
-      chatButton: { 
-        icon: 'chat-icon.png',  <!-- Bi?u tı?ng c?a nút chat (tu? ch?n) -->
-        backgroundColor: '#00B8D4',  <!-- Màu n?n c?a nút chat -->
+  <!-- MÃ£ cÃ i Ä‘áº·t Chat Widget Coze -->
+  <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+  <script>
+    new CozeWebSDK.WebChatClient({
+      config: {
+        bot_id: '7559917671878721544' // ğŸ‘‰ Thay bot_id nÃ y náº¿u báº¡n cÃ³ bot riÃªng
+      },
+      componentProps: {
+        title: 'Coze Chat',
+        welcomeMessage: 'ChÃ o báº¡n! Cáº§n trá»£ giÃºp gÃ¬ hÃ´m nay?',
+        chatButton: { 
+          icon: 'chat-icon.png', // (tÃ¹y chá»n) biá»ƒu tÆ°á»£ng nÃºt chat
+          backgroundColor: '#00B8D4' // MÃ u ná»n nÃºt chat
+        }
       }
-    }
-  });
-</script>
+    });
+  </script>
 
 </body>
 </html>
