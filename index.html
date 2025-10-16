@@ -3,50 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Web Cài Đặt Chat Widget</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f7f7f7;
-    }
-    .container {
-      text-align: center;
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
+  <title>Coze Chat Widget</title>
 </head>
 <body>
-
-  <div class="container">
-    <h1>Chào mừng đến với Trang Web của tôi!</h1>
-    <p>Ứng dụng chat đã được cài đặt và sẵn sàng để sử dụng.</p>
-  </div>
-
-  <!-- Mã cài đặt Chat Widget Coze -->
+  <!-- Chat widget sẽ hiển thị ở góc dưới phải -->
   <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
   <script>
     new CozeWebSDK.WebChatClient({
       config: {
-        bot_id: '7559917671878721544' // 👉 Thay bot_id này nếu bạn có bot riêng
+        bot_id: '7559917671878721544', // ID bot của bạn
       },
       componentProps: {
-        title: 'Coze Chat',
-        welcomeMessage: 'Chào bạn! Cần trợ giúp gì hôm nay?',
-        chatButton: { 
-          icon: 'chat-icon.png', // (tùy chọn) biểu tượng nút chat
-          backgroundColor: '#00B8D4' // Màu nền nút chat
-        }
+        title: 'Coze Chat',        // Tiêu đề widget
+        position: 'bottom-right',  // Vị trí hiển thị widget
+        welcomeMessage: 'Xin chào! Tôi có thể giúp gì cho bạn?', // Tin nhắn chào
       }
+      // Không cần auth nếu bot public
     });
   </script>
-
 </body>
 </html>
